@@ -1,0 +1,13 @@
+Stock Sentiment Ensemble Model
+==============================
+
+Created: 2025-03-24 16:33:18
+Accuracy: 0.6654
+
+Model Weights:
+  - Reddit Model: 0.4082
+  - News API Model: 0.5918
+
+Features Used:
+  - sentiment_features: ['sentiment_compound_filled', 'sentiment_positive_filled', 'sentiment_negative_filled', 'sentiment_7day_avg']
+  - combined_features: ['sentiment_compound_filled', 'sentiment_positive_filled', 'sentiment_negative_filled', 'sentiment_7day_avg','predicted_direction']
