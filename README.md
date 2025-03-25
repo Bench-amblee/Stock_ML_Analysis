@@ -1,4 +1,5 @@
-# Project Name
+# Reddit vs. the News
+## Which is more accurate at predicting stock movement? 
 
 For code go to [Notebooks](#/notebooks)
 For raw data go to [Data](#/data)
