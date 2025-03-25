@@ -16,7 +16,7 @@ The thought process was to build a classifier based on compound sentiment score 
 - predicted direction: a classification variable that assigns three values that evaluate a stock's movement: "up", "down", or "flat" based on the sentiment of the Reddit post of news article.
   
 ### Initial Approach
-- This approach was based on similar studys by ![Shan Zhong and David B. Hitchcock](#https://arxiv.org/abs/2108.10826) and by ![Taylan Kabbani and Faith Enes Usta](#https://arxiv.org/abs/2201.12283)
+- This approach was based on similar studys by [Shan Zhong and David B. Hitchcock](https://arxiv.org/abs/2108.10826) and by [Taylan Kabbani and Faith Enes Usta](https://arxiv.org/abs/2201.12283)
 - I wanted to make the study unique by comparing Reddit to the News to see if a noticable difference could be found in overall accuracy
   
 ### Key Design Decisions
