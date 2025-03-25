@@ -70,10 +70,5 @@ The final weighted ensemble model, combining the strengths of both data sources,
     - Vertex AI Pipelines for ML Pipeline development
     - Vertex AI for Model Deployment and Re-Training
     - Cloud Monitoring for real time updates and alerts
+
 #### Thank You :)
-
-## Acknowledgements
-Credit to team members, libraries used, data sources, or other resources that contributed to the project.
-
-## License
-[Specify the license under which this project is released]
