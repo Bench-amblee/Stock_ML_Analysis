@@ -8,7 +8,7 @@ For raw data go to [Data](#/data)
 This project investigates whether sentiment analysis of social media discussions and news articles can effectively predict stock market movements. Using natural language processing and machine learning techniques, we analyze sentiment patterns from popular subreddits (such as r/wallstreetbets, r/investing, and r/stocks) and compare them with sentiment extracted from financial news sources to determine which better correlates with subsequent stock price changes.
 Built entirely in Python, this project sources data from the Reddit API and NewsAPI all related to the "Magnificent 7" Stocks over the last year (March 2024 to March 2025). This approach combines sentiment analysis, feature engineering, hyperparameter optimization, and various machine learning models to identify predictive patterns in text data that might precede market movements, potentially offering investors an alternative signal for decision-making.
 ![Process map](/images/process-map.png)
-*Caption: High-level visualization of the process overview*
+*High-level visualization of the process overview*
 
 ## Thought Process
 The thought process was to build a classifier based on compound sentiment score and predicted direction. 
@@ -47,7 +47,7 @@ The final weighted ensemble model, combining the strengths of both data sources,
 
 ![Results confusion matrix](/images/confusion-matrix.png)
 ![Results confusion matrix](/images/model-accuracy.png)
-*Caption: Visualization of a confusion matrix of the final optimized model and a comparison of each model vs. the final weighted ensemble model*
+*Visualization of a confusion matrix of the final optimized model and a comparison of each model vs. the final weighted ensemble model*
 
 
 ## Next Steps
