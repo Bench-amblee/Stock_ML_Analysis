@@ -16,7 +16,7 @@ The thought process was to build a classifier based on compound sentiment score 
 - predicted direction: a classification variable that assigns three values that evaluate a stock's movement: "up", "down", or "flat" based on the sentiment of the Reddit post of news article.
   
 ### Initial Approach
-- This approach was based on similar studys by [Shan Zhong and David B. Hitchcock](#https://arxiv.org/abs/2108.10826) and by [Taylan Kabbani and Faith Enes Usta](#https://arxiv.org/abs/2201.12283)
+- This approach was based on similar studys by ![Shan Zhong and David B. Hitchcock](#https://arxiv.org/abs/2108.10826) and by ![Taylan Kabbani and Faith Enes Usta](#https://arxiv.org/abs/2201.12283)
 - I wanted to make the study unique by comparing Reddit to the News to see if a noticable difference could be found in overall accuracy
   
 ### Key Design Decisions
@@ -46,9 +46,8 @@ The thought process was to build a classifier based on compound sentiment score 
 The final weighted ensemble model, combining the strengths of both data sources, achieved 66.5% accuracy - this doesn't sound like a lot, but relative to other professional studies, which typically achieve 60-70% accuracy in similar prediction tasks, it seems to be performing well! This performance is particularly promising given the inherent volatility and unpredictability of financial markets.
 
 ![Results confusion matrix](/images/confusion-matrix.png)
-*Caption: Visualization of a confusion matrix of the final optimized model*
 ![Results confusion matrix](/images/model-accuracy.png)
-*Caption: Visualization of model accuracy comparisons*
+*Caption: Visualization of a confusion matrix of the final optimized model and a comparison of each model vs. the final weighted ensemble model*
 
 
 ## Next Steps
