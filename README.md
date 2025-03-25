@@ -7,8 +7,8 @@ For raw data go to [Data](#/data)
 ## Overview
 This project investigates whether sentiment analysis of social media discussions and news articles can effectively predict stock market movements. Using natural language processing and machine learning techniques, we analyze sentiment patterns from popular subreddits (such as r/wallstreetbets, r/investing, and r/stocks) and compare them with sentiment extracted from financial news sources to determine which better correlates with subsequent stock price changes.
 Built entirely in Python, this project sources data from the Reddit API and NewsAPI all related to the "Magnificent 7" Stocks over the last year (March 2024 to March 2025). This approach combines sentiment analysis, feature engineering, hyperparameter optimization, and various machine learning models to identify predictive patterns in text data that might precede market movements, potentially offering investors an alternative signal for decision-making.
-![Data word cloud](/images/sources-word-cloud.png)
-*Caption: High-level visualization of the project architecture*
+![Process map](/images/process-map.png)
+*Caption: High-level visualization of the process overview*
 
 ## Thought Process
 The thought process was to build a classifier based on compound sentiment score and predicted direction. 
@@ -23,9 +23,6 @@ The thought process was to build a classifier based on compound sentiment score 
 - Decision 1: [Creating a classification variable: prediction_direction to match the stock's direction. This process involved evaluating the sentiment and then adding an additional classification variable. My initial concern was that this might have resulted in overfitting but it proved to be very useful while evaluating models]
 - Decision 2: [Weighted Ensemble Model: While one model significantly outperformed the other in terms of accuracy, using both models with a weighted bias towards the more accurate one yielded better overall results]
 - Decision 3: [Random Forest Classifier: this model was selected because it outperformed other classification models and worked well with using mixed features from the numerical sentiment score and categorical prediction classifier]
-
-![Design process map](/images/process-map.png)
-*Caption: Visual representation of the design thinking process*
 
 ## Challenges Faced
 
