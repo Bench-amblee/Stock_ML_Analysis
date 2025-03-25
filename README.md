@@ -20,9 +20,9 @@ The thought process was to build a classifier based on compound sentiment score 
 - I wanted to make the study unique by comparing Reddit to the News to see if a noticable difference could be found in overall accuracy
   
 ### Key Design Decisions
-- Decision 1: [Creating a classification variable: prediction_direction to match the stock's direction. This process involved evaluating the sentiment and then adding an additional classification variable. My initial concern was that this might have resulted in overfitting but it proved to be very useful while evaluating models]
-- Decision 2: [Weighted Ensemble Model: While one model significantly outperformed the other in terms of accuracy, using both models with a weighted bias towards the more accurate one yielded better overall results]
-- Decision 3: [Random Forest Classifier: this model was selected because it outperformed other classification models and worked well with using mixed features from the numerical sentiment score and categorical prediction classifier]
+- Creating a classification variable: prediction_direction to match the stock's direction. This process involved evaluating the sentiment and then adding an additional classification variable. My initial concern was that this might have resulted in overfitting but it proved to be very useful while evaluating models
+- Weighted Ensemble Model: While one model significantly outperformed the other in terms of accuracy, using both models with a weighted bias towards the more accurate one yielded better overall results
+- Random Forest Classifier: this model was selected because it outperformed other classification models and worked well with using mixed features from the numerical sentiment score and categorical prediction classifier
 
 ## Challenges Faced
 
@@ -38,9 +38,9 @@ The thought process was to build a classifier based on compound sentiment score 
 ## Results & Interpretation
 
 ### Key Metrics
-- Reddit Model Accuracy : [43.8%]  - Even with optimized features and hyperparameters, the best performing reddit sentiment model was less accurate than a coin flip.
-- News Model Accuracy: [63.5%] - Turns out reading the news might make you a much better investor (not financial advice) this tells us that in general the news' sentiment lines up significantly more with the actual stock market.
-- Final Weighted Ensemble Model Accuracy: [66.5%] - Combining both sources gives us the most accurate model!
+- Reddit Model Accuracy : **43.8%**  - Even with optimized features and hyperparameters, the best performing reddit sentiment model was less accurate than a coin flip.
+- News Model Accuracy: **63.5%** - Turns out reading the news might make you a much better investor (not financial advice) this tells us that in general the news' sentiment lines up significantly more with the actual stock market.
+- Final Weighted Ensemble Model Accuracy: **66.5%** - Combining both sources gives us the most accurate model!
 
 ### Analysis
 The final weighted ensemble model, combining the strengths of both data sources, achieved 66.5% accuracy - this doesn't sound like a lot, but relative to other professional studies, which typically achieve 60-70% accuracy in similar prediction tasks, it seems to be performing well! This performance is particularly promising given the inherent volatility and unpredictability of financial markets.
@@ -53,9 +53,9 @@ The final weighted ensemble model, combining the strengths of both data sources,
 ## Next Steps
 
 ### Short-term Improvements
-- Refined Feature Engineering: [Refine the process of prediction features, possibly incorporating confidence levels or additional lables like "up_likely" and "up_very_likely" for more details.]
-- Additional Data Sources: [Expanding the training data to include other sources like Twitter (X), Seeking Alpha, or any other sources that may improve accuracy.]
-- Subreddit Analysis: [Reddit's poor performance might be the result of poor subreddit selection - a seperate analysis could be performed that removes WallStreetBets or tests other relevant subreddits.]
+- **Refined Feature Engineering**: Refine the process of prediction features, possibly incorporating confidence levels or additional lables like "up_likely" and "up_very_likely" for more details.
+- **Additional Data Sources**: Expanding the training data to include other sources like Twitter (X), Seeking Alpha, or any other sources that may improve accuracy.
+- **Subreddit Analysis**: Reddit's poor performance might be the result of poor subreddit selection - a seperate analysis could be performed that removes WallStreetBets or tests other relevant subreddits.
 
 ## Deployment Considerations
 
